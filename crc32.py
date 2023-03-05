@@ -11,7 +11,6 @@ for i in range(256):
 
 def crc32(string):
     value = 0xffffffff
-
     for char in string:
         value = table_of_crc[(ord(char) ^ value) & 0x000000ff] ^ (value >> 8)
     return hex(value)
