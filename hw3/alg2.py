@@ -1,5 +1,6 @@
 def knapsack(exhibits, m, k):
-    exhibits.sort(key=lambda x: x[1] / x[0], reverse=True)
+    #exhibits.sort(key=lambda x: x[1] / x[0], reverse=True)
+    exhibits.sort(key=lambda x: x[1], reverse=True)
 
     weight = 0
     value = 0
